@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio De Gaetano | Bioinformatician & GNU/Linux Systems Developer</title>
+  
+  <meta name="description" content="Personal profile, CV, and portfolio of Antonio De Gaetano - Bioinformatician (Howest), Biological Science (B.Sc. Hons, Parthenope), and GNU/Linux systems developer.">
+  <meta name="author" content="Antonio De Gaetano">
+  <meta name="keywords" content="Antonio De Gaetano, Antux912012, Bioinformatics, Howest, Linux, Sailfish OS, Rust, GTK4, Libadwaita, Python, Portfolio, CV">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://antux912012.github.io/">
+  <meta property="og:title" content="Antonio De Gaetano | Portfolio & CV">
+  <meta property="og:description" content="Bioinformatician & GNU/Linux Systems Developer. Explore open-source projects, CV, and research.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/75676004?v=4">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/avatar.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =======================================================================
+       Header / Navigation Bar
+       ======================================================================= -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrapper">
+      <a href="#top" class="brand-link" aria-label="Antonio De Gaetano Home">
+        <img src="assets/avatar.svg" alt="Antonio De Gaetano" class="brand-avatar" onerror="this.src='https://avatars.githubusercontent.com/u/75676004?v=4'">
+        <span>Antonio De Gaetano</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#cv" class="nav-link">Curriculum Vitae</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle dark/light mode" title="Toggle Theme">
+          <!-- Dynamically populated by main.js -->
+        </button>
+        <a href="https://github.com/Antux912012" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub Profile" title="GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <button id="mobileToggle" class="btn-icon mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       Hero Section
+       ======================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge-wrap">
+          <span class="hero-badge-dot"></span>
+          <span>Bioinformatician & GNU/Linux Systems Developer</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Antonio De Gaetano</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Master's student in Bioinformatics at <strong>Howest University of Applied Sciences</strong>, holding a B.Sc. (Hons) 1st Class in Biological Sciences. Passionate about computational biology, Linux kernel adaptation, and crafting modern native software in Rust, GTK4, and Python.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            Explore Projects
+          </a>
+          <a href="#cv" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Curriculum Vitae
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Get in Touch
+          </a>
+        </div>
+
+        <div class="hero-social-links">
+          <a href="https://www.linkedin.com/in/antonio-de-gaetano" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Antux912012" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Repositories">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://github.com/Antux912012/arda-tech-ppa" target="_blank" rel="noopener noreferrer" class="social-pill" title="Arda-Tech APT Repository">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            <span>Arda-Tech PPA</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-avatar-box">
+        <img src="assets/avatar.svg" alt="Antonio De Gaetano" class="hero-avatar-img" onerror="this.src='https://avatars.githubusercontent.com/u/75676004?v=4'">
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       About Me Section
+       ======================================================================= -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Overview</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">
+          Merging the exactness of biological science with low-level systems programming and high-performance software engineering.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            Bio & Background
+          </h3>
+          <p>
+            I am a <strong>Bioinformatics Master's student</strong> at <strong>Howest University of Applied Sciences</strong> (Belgium), holding a <strong>First Class Honours B.Sc. in Biological Sciences</strong> from <strong>Università degli Studi di Napoli "Parthenope"</strong> (Naples, Italy).
+          </p>
+          <p>
+            Throughout my academic and professional journey—spanning life sciences research, ultrapure laboratory water solutions at <strong>Merck KGaA</strong>, enterprise operations at <strong>Etraveli Group</strong>, and network environments—I have cultivated an interdisciplinary expertise where computational workflows and systems engineering intersect.
+          </p>
+          <p>
+            Outside of data analysis, I am a committed <strong>GNU/Linux enthusiast</strong> actively developing native desktop applications in <strong>Rust (GTK4 / Libadwaita)</strong>, building automated packaging for Debian/Ubuntu (Arda-Tech PPA), maintaining custom CachyOS Linux kernel trees, and porting <strong>Sailfish OS</strong> to ARM64 smartphone hardware via the Hardware Adaptation Development Kit (HADK).
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            Core Pillars
+          </h3>
+          <ul class="highlights-list">
+            <li class="highlight-item">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Computational Biology & Genomics</h4>
+                <p>Next-Generation Sequencing pipelines, statistical genetics, sequence alignment, biological databases, and bioelectrochemical system modeling.</p>
+              </div>
+            </li>
+
+            <li class="highlight-item">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Linux Kernel & Hardware Adaptation</h4>
+                <p>Sailfish OS HADK mobile bringup, `libhybris` HAL integration, custom kernel patches, Scratchbox2 cross-compilation, and device driver fixes.</p>
+              </div>
+            </li>
+
+            <li class="highlight-item">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Modern Native Linux GUI & Tooling</h4>
+                <p>Building responsive, modern desktop software using Rust, Python, Vala, GTK4, Libadwaita, WebKitGTK 6.0, and Wayland compositor protocols.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       Curriculum Vitae (CV) Section
+       ======================================================================= -->
+  <section id="cv">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career & Education</span>
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p class="section-desc">
+          Professional experience, academic qualifications, and research history sourced from LinkedIn and verified credentials.
+        </p>
+      </div>
+
+      <div class="cv-controls">
+        <div class="cv-tabs">
+          <button class="cv-tab-btn active" data-tab="all">All</button>
+          <button class="cv-tab-btn" data-tab="experience">Experience</button>
+          <button class="cv-tab-btn" data-tab="education">Education</button>
+        </div>
+
+        <button id="printCvBtn" class="btn btn-secondary" title="Export or print CV">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print / PDF Export
+        </button>
+      </div>
+
+      <div class="timeline" id="cvTimeline">
+
+        <!-- Education 1 -->
+        <div class="timeline-item" data-type="education">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Master of Science in Bioinformatics</h3>
+              <span class="timeline-date">In Progress</span>
+            </div>
+            <div class="timeline-company">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Howest University of Applied Sciences (Kortrijk, Belgium)
+            </div>
+            <p class="timeline-desc">
+              Advanced training in computational biology, statistical genomics, algorithmic analysis of Next-Generation Sequencing (NGS) data, molecular modeling, structural bioinformatics, and data engineering pipelines.
+            </p>
+            <div class="timeline-tags">
+              <span class="pill-tag">Genomics</span>
+              <span class="pill-tag">NGS Pipelines</span>
+              <span class="pill-tag">Biostatistics</span>
+              <span class="pill-tag">Python & R</span>
+              <span class="pill-tag">Molecular Modeling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 1 -->
+        <div class="timeline-item" data-type="experience">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Support Travel Agent - Flight Irregularities</h3>
+              <span class="timeline-date">Recent</span>
+            </div>
+            <div class="timeline-company">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              Etraveli Group
+            </div>
+            <p class="timeline-desc">
+              Managed complex international flight irregularities, schedule modifications, and crisis rerouting in high-throughput real-time environments.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Handled end-to-end global customer operations through Global Distribution Systems (GDS) including <strong>Amadeus, Sabre, and Galileo</strong>.</li>
+              <li>Executed automated and manual ticket reissues, routing validations, schedule change triages, and airline policy compliance under strict SLAs.</li>
+              <li>Resolved critical flight disruptions and irregular operations with high accuracy and customer satisfaction.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill-tag">GDS (Amadeus, Sabre, Galileo)</span>
+              <span class="pill-tag">Crisis Management</span>
+              <span class="pill-tag">Operations</span>
+              <span class="pill-tag">SLA Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item" data-type="experience">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Lab Water Solutions Specialist</h3>
+              <span class="timeline-date">Analytical & Life Science</span>
+            </div>
+            <div class="timeline-company">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2v6h6M4 16v-6a2 2 0 0 1 2-2h8l6 6v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-4"></path></svg>
+              Merck KGaA (Central Analytical Services)
+            </div>
+            <p class="timeline-desc">
+              Provided technical expertise, consultative sales, and technical system specifications for ultrapure laboratory water purification solutions across universities, research institutes, and analytical laboratories.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Guided researchers on water grade purity specifications (Type 1, Type 2, Type 3) required for HPLC, LC-MS, PCR, and cell culture sensitivity.</li>
+              <li>Managed key accounts and delivered technical consulting for analytical laboratories and scientific facilities.</li>
+              <li>Analyzed customer instrumentation demands to architect optimal purification flow and filtration setups.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill-tag">Analytical Chemistry</span>
+              <span class="pill-tag">Lab Water Purification</span>
+              <span class="pill-tag">Account Management</span>
+              <span class="pill-tag">Technical Consulting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="timeline-item" data-type="education">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Bachelor of Science (Hons) in Biological Sciences (1st Class)</h3>
+              <span class="timeline-date">Honours Graduate</span>
+            </div>
+            <div class="timeline-company">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Università degli Studi di Napoli "Parthenope" (Naples, Italy)
+            </div>
+            <p class="timeline-desc">
+              Graduated with First Class Honours. Rigorous foundation in molecular biology, biochemistry, genetics, microbiology, cell biology, and laboratory methods.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Authored B.Sc. Research Thesis: <em>"Microbial Fuel Cells and Bioelectrochemical Energy Generation"</em>, fully typeset in LaTeX.</li>
+              <li>Investigated microbial electron transfer mechanisms, exoelectrogenic bacteria, and biocatalytic anode kinetics.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill-tag">Molecular Biology</span>
+              <span class="pill-tag">Microbiology</span>
+              <span class="pill-tag">Genetics</span>
+              <span class="pill-tag">Microbial Fuel Cells</span>
+              <span class="pill-tag">LaTeX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item" data-type="experience">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Enterprise Systems & Networking Knowledge</h3>
+              <span class="timeline-date">Technical Focus</span>
+            </div>
+            <div class="timeline-company">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              Cisco Environments & Linux Infrastructure
+            </div>
+            <p class="timeline-desc">
+              Extensive background configuring and operating POSIX/Linux systems, IP routing, subnets, DNS, packet capture analysis, containerized networks, and enterprise IT infrastructure.
+            </p>
+            <div class="timeline-tags">
+              <span class="pill-tag">Networking</span>
+              <span class="pill-tag">TCP/IP</span>
+              <span class="pill-tag">Linux Sysadmin</span>
+              <span class="pill-tag">Cisco Ecosystem</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       Technical Skills Matrix
+       ======================================================================= -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">Technical Skills Matrix</h2>
+        <p class="section-desc">
+          Proficiencies across systems development, programming languages, bioinformatics, and native desktop frameworks.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1 -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="skill-category-title">Languages</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-chip">Rust</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Vala</span>
+            <span class="skill-chip">C / C++</span>
+            <span class="skill-chip">Shell (Bash/Zsh)</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">HTML5 / CSS3</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">LaTeX</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </div>
+            <h3 class="skill-category-title">Systems & Kernel</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-chip">GNU/Linux (Debian, Arch/CachyOS)</span>
+            <span class="skill-chip">Sailfish OS HADK Porting</span>
+            <span class="skill-chip">Linux Kernel Patching & Tuning</span>
+            <span class="skill-chip">Scratchbox2 (sb2) Cross-Compilation</span>
+            <span class="skill-chip">systemd Service Hardening</span>
+            <span class="skill-chip">libhybris HAL Integration</span>
+            <span class="skill-chip">Podman & Docker Containers</span>
+            <span class="skill-chip">Debian APT & Flatpak Packaging</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.1 7.1"></path><path d="M12 12l4.9 8.9"></path></svg>
+            </div>
+            <h3 class="skill-category-title">GUI & Client-Side</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-chip">GTK4 & Libadwaita</span>
+            <span class="skill-chip">WebKitGTK 6.0</span>
+            <span class="skill-chip">Wayland Compositing</span>
+            <span class="skill-chip">Vulkan GPU Rendering</span>
+            <span class="skill-chip">GtkSourceView 5</span>
+            <span class="skill-chip">AdwNavigationSplitView</span>
+            <span class="skill-chip">Responsive Web UI</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h3 class="skill-category-title">Bioinformatics & Analytics</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-chip">Next-Gen Sequencing (NGS)</span>
+            <span class="skill-chip">Biostatistics</span>
+            <span class="skill-chip">Sequence Alignment</span>
+            <span class="skill-chip">Genomic Databases (NCBI, Ensembl)</span>
+            <span class="skill-chip">Biological Data Pipelines</span>
+            <span class="skill-chip">Microbial Bioelectrochemical Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       Featured Projects Showcase
+       ======================================================================= -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">
+          Open-source repositories, system utilities, Linux mobile ports, and native Linux desktop software.
+        </p>
+      </div>
+
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="systems">Systems & Kernel</button>
+        <button class="filter-btn" data-filter="desktop">Rust & GTK4</button>
+        <button class="filter-btn" data-filter="tools">Linux Tools & Packaging</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Sailfish OS Port -->
+        <article class="project-card featured" data-category="systems">
+          <div class="project-top">
+            <span class="project-category">Mobile Linux / Kernel</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/sailfishos-xiaomi-libra" target="_blank" rel="noopener noreferrer">
+                sailfishos-xiaomi-libra
+              </a>
+            </h3>
+            <p class="project-desc">
+              Hardware Adaptation Development Kit (HADK) port of Sailfish OS to the Xiaomi Mi4c (`libra`, MSM8992). Features patched Linux 3.10.x 64-bit kernel, systemd adaptations, libhybris Android 7.1.2 HAL, and Wayland compositor.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">Sailfish OS</span>
+              <span class="pill-tag">Linux Kernel 3.10</span>
+              <span class="pill-tag">aarch64</span>
+              <span class="pill-tag">libhybris</span>
+              <span class="pill-tag">Snapdragon 808</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/sailfishos-xiaomi-libra" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Mithrandir-RS -->
+        <article class="project-card featured" data-category="desktop systems">
+          <div class="project-top">
+            <span class="project-category">Native Desktop / Systems</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/mithrandir-rs" target="_blank" rel="noopener noreferrer">
+                mithrandir-rs
+              </a>
+            </h3>
+            <p class="project-desc">
+              Modern GNU/Linux cleaner, optimizer, telemetry monitor, and AI-assisted diagnostics utility written in Rust. Features a native GNOME HIG interface built with GTK4 and Libadwaita.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">Rust</span>
+              <span class="pill-tag">GTK4</span>
+              <span class="pill-tag">Libadwaita</span>
+              <span class="pill-tag">Linux Diagnostics</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/mithrandir-rs" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Vingilot Web Browser -->
+        <article class="project-card featured" data-category="desktop">
+          <div class="project-top">
+            <span class="project-category">Native Desktop / Browser</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/Vingilot" target="_blank" rel="noopener noreferrer">
+                Vingilot
+              </a>
+            </h3>
+            <p class="project-desc">
+              Lightweight, privacy-focused native web browser built with Rust, Libadwaita (GTK4), WebKitGTK 6.0, Wayland compositing, and Vulkan GPU hardware acceleration.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">Rust</span>
+              <span class="pill-tag">WebKitGTK 6.0</span>
+              <span class="pill-tag">Libadwaita</span>
+              <span class="pill-tag">Vulkan</span>
+              <span class="pill-tag">Wayland</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/Vingilot" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Imladris Next -->
+        <article class="project-card" data-category="desktop">
+          <div class="project-top">
+            <span class="project-category">Native Desktop / Productivity</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/imladris-next-md-editor" target="_blank" rel="noopener noreferrer">
+                imladris-next-md-editor
+              </a>
+            </h3>
+            <p class="project-desc">
+              Native GTK4 & Libadwaita Markdown editor written in Vala. Integrates GtkSourceView 5 for syntax highlighting, WebKitGTK 6.0 for real-time live preview, and libcmark parser.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">Vala</span>
+              <span class="pill-tag">GTK4</span>
+              <span class="pill-tag">GtkSourceView 5</span>
+              <span class="pill-tag">libcmark</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/imladris-next-md-editor" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5: Arda-Tech PPA -->
+        <article class="project-card" data-category="tools systems">
+          <div class="project-top">
+            <span class="project-category">Packaging & Repositories</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/arda-tech-ppa" target="_blank" rel="noopener noreferrer">
+                arda-tech-ppa
+              </a>
+            </h3>
+            <p class="project-desc">
+              Personal Debian & Ubuntu APT PPA Repository and Flatpak distribution hosting Mithrandir, Mithrandir-RS, Vingilot, Imladris, CachyOS Kernel Updater, and hardware driver packages.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">APT PPA</span>
+              <span class="pill-tag">Flatpak</span>
+              <span class="pill-tag">Debian</span>
+              <span class="pill-tag">Packaging</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/arda-tech-ppa" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6: CachyOS Kernel Updater -->
+        <article class="project-card" data-category="systems tools">
+          <div class="project-top">
+            <span class="project-category">Kernel & Systems</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/debian-cachy-kernel-updater" target="_blank" rel="noopener noreferrer">
+                debian-cachy-kernel-updater
+              </a>
+            </h3>
+            <p class="project-desc">
+              Automated updater and compiler utility that allows Debian users to easily compile, install, verify, sign, and rollback high-performance CachyOS kernels with BORE scheduler.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">Python</span>
+              <span class="pill-tag">Shell</span>
+              <span class="pill-tag">CachyOS Kernel</span>
+              <span class="pill-tag">Debian</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/debian-cachy-kernel-updater" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 7: VFS5011 Linux Fix -->
+        <article class="project-card" data-category="systems">
+          <div class="project-top">
+            <span class="project-category">Hardware Drivers</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/vfs5011-linux-fix" target="_blank" rel="noopener noreferrer">
+                vfs5011-linux-fix
+              </a>
+            </h3>
+            <p class="project-desc">
+              Linux driver fix and automated installer script for Validity VFS5011 fingerprint sensors (USB IDs 138a:0011, 138a:0017, 138a:0018) enabling biometric authentication on Linux.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">Shell</span>
+              <span class="pill-tag">libfprint</span>
+              <span class="pill-tag">Kernel Driver</span>
+              <span class="pill-tag">Biometrics</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/vfs5011-linux-fix" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 8: YT Comment Extractor GTK -->
+        <article class="project-card" data-category="tools desktop">
+          <div class="project-top">
+            <span class="project-category">Desktop Utility</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/YT-Comment-Extractor-GTK" target="_blank" rel="noopener noreferrer">
+                YT-Comment-Extractor-GTK
+              </a>
+            </h3>
+            <p class="project-desc">
+              Graphical GTK application leveraging yt-dlp to extract, filter, analyze, and export random comments from YouTube videos for giveaways, NLP, and analytics.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">Python</span>
+              <span class="pill-tag">GTK</span>
+              <span class="pill-tag">yt-dlp</span>
+              <span class="pill-tag">Data Extraction</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/YT-Comment-Extractor-GTK" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 9: Academic LaTeX Thesis -->
+        <article class="project-card" data-category="tools">
+          <div class="project-top">
+            <span class="project-category">Academic Research</span>
+            <h3 class="project-title">
+              <a href="https://github.com/Antux912012/LaTeX-Thesis---Universit-Parthenope-of-Naples-Italy" target="_blank" rel="noopener noreferrer">
+                B.Sc. Thesis (Parthenope)
+              </a>
+            </h3>
+            <p class="project-desc">
+              Complete Bachelor of Science honours thesis repository in LaTeX format focusing on Microbial Fuel Cells, bioelectrochemical systems, and microbiology.
+            </p>
+            <div class="project-stack">
+              <span class="pill-tag">LaTeX</span>
+              <span class="pill-tag">Microbiology</span>
+              <span class="pill-tag">Bioenergy</span>
+              <span class="pill-tag">Academic</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Antux912012/LaTeX-Thesis---Universit-Parthenope-of-Naples-Italy" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       Contact Section
+       ======================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <h3>Let's Connect</h3>
+        <p>
+          Interested in collaborating on bioinformatics research, Linux kernel & systems development, or open-source software? Feel free to reach out via LinkedIn or GitHub.
+        </p>
+        <div class="contact-actions">
+          <a href="https://www.linkedin.com/in/antonio-de-gaetano" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Connect on LinkedIn
+          </a>
+          <a href="https://github.com/Antux912012" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Follow on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       Footer
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 Antonio De Gaetano. Hosted on GitHub Pages.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/antonio-de-gaetano" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/Antux912012" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://github.com/Antux912012/arda-tech-ppa" target="_blank" rel="noopener noreferrer" class="footer-link">Arda-Tech PPA</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

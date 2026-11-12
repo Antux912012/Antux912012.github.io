@@ -17,10 +17,10 @@ Personal profile, interactive Curriculum Vitae (CV), and open-source project por
   - One-click print/PDF export mode with a dedicated print stylesheet.
 - **Technical Skills Matrix**: Comprehensive categorization of languages (Rust, Python, Vala, C/C++, Shell, SQL, LaTeX), Linux systems & kernel adaptation, native GUI frameworks (GTK4, Libadwaita, WebKitGTK 6.0, Wayland, Vulkan), and bioinformatics competencies.
 - **Featured Open-Source Projects**: Filterable portfolio showcasing:
+  - [`imladris` (v0.18.0)](https://github.com/Antux912012/imladris) ([Landing Page](https://antux912012.github.io/imladris/)): Flagship native Linux polyglot scientific workbench (`.qmd`, `.Rmd`, `.ipynb`, `.Rproj`) with the Arekyer Galaxy-to-Quarto Provenance Bridge, Natural Math & Chemical Reaction Studio, and Elrond Local AI.
   - `sailfishos-xiaomi-libra`: Sailfish OS HADK port for Xiaomi Mi4c (Qualcomm Snapdragon 808 / MSM8992).
   - `mithrandir-rs` & `mithrandir`: Modern GNU/Linux cleaner, optimizer, telemetry and diagnostics in Rust & Python.
   - `Vingilot`: Lightweight, privacy-focused native web browser built with Libadwaita (GTK4), WebKitGTK 6.0, Wayland, and Vulkan.
-  - `imladris-next-md-editor`: Native GTK4/Libadwaita Markdown editor with live WebKit preview.
   - `arda-tech-ppa`: Official Debian & Ubuntu APT PPA and Flatpak repository.
   - `debian-cachy-kernel-updater`: Automated CachyOS kernel builder and manager for Debian.
   - `vfs5011-linux-fix`: Validity VFS5011 Linux fingerprint sensor driver fix.

@@ -51,11 +51,12 @@ function updateThemeIcon() {
   const themeToggle = document.getElementById("themeToggle");
   if (!themeToggle) return;
   const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-  
+
+  // Fluent UI System Icons: weather_sunny_20_regular / weather_moon_20_regular
   themeToggle.innerHTML = isDark
-    ? `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`
-    : `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
-  
+    ? `<svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 3a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1A.75.75 0 0 1 10 3Zm0 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-1.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm0 3.75a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75ZM17 10a.75.75 0 0 1-.75.75h-1a.75.75 0 0 1 0-1.5h1A.75.75 0 0 1 17 10ZM4.75 10.75h-1a.75.75 0 0 1 0-1.5h1a.75.75 0 0 1 0 1.5ZM14.95 5.05a.75.75 0 0 1 0 1.06l-.7.71a.75.75 0 1 1-1.07-1.06l.71-.71a.75.75 0 0 1 1.06 0ZM6.82 13.18a.75.75 0 0 1 0 1.06l-.71.71a.75.75 0 0 1-1.06-1.06l.7-.71a.75.75 0 0 1 1.07 0Zm8.13 1.77a.75.75 0 0 1-1.06 0l-.71-.7a.75.75 0 1 1 1.06-1.07l.71.71a.75.75 0 0 1 0 1.06ZM6.82 6.82a.75.75 0 0 1-1.06 0l-.71-.71A.75.75 0 1 1 6.1 5.05l.71.7a.75.75 0 0 1 0 1.07Z"/></svg>`
+    : `<svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.9 2.02a.75.75 0 0 1 .39 1.01A5.97 5.97 0 0 0 16.97 11a.75.75 0 0 1 .99.98A8 8 0 1 1 8.9 2.04a.75.75 0 0 1 1-.02ZM8.3 3.74a6.5 6.5 0 1 0 7.96 8.96 7.47 7.47 0 0 1-7.96-8.96Z"/></svg>`;
+
   themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
 }
 
@@ -70,16 +71,31 @@ function initMobileNav() {
 
   if (!mobileToggle || !navMenu) return;
 
-  mobileToggle.addEventListener("click", () => {
+  const closeMenu = () => {
+    navMenu.classList.remove("open");
+    mobileToggle.setAttribute("aria-expanded", "false");
+  };
+
+  mobileToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
     const isOpen = navMenu.classList.toggle("open");
-    mobileToggle.setAttribute("aria-expanded", isOpen);
+    mobileToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-      mobileToggle.setAttribute("aria-expanded", "false");
-    });
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (navMenu.classList.contains("open") && !navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navMenu.classList.contains("open")) {
+      closeMenu();
+    }
   });
 }
 
@@ -158,15 +174,20 @@ function initScrollSpy() {
 
   window.addEventListener("scroll", () => {
     let current = "";
-    const scrollY = window.pageYOffset;
+    const scrollY = window.scrollY;
+    const nearBottom = window.innerHeight + scrollY >= document.documentElement.scrollHeight - 40;
 
-    sections.forEach((section) => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 120;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
-      }
-    });
+    if (nearBottom && sections.length > 0) {
+      current = sections[sections.length - 1].getAttribute("id");
+    } else {
+      sections.forEach((section) => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 120;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+    }
 
     navLinks.forEach((link) => {
       link.classList.remove("active");

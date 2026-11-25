@@ -111,8 +111,8 @@ function initCvTabs() {
 
       const filter = btn.getAttribute("data-tab");
       timelineItems.forEach((item) => {
-        const itemType = item.getAttribute("data-type");
-        item.hidden = !(filter === "all" || filter === itemType);
+        const types = (item.getAttribute("data-type") || "").split(" ");
+        item.hidden = !(filter === "all" || types.includes(filter));
       });
     });
   });
